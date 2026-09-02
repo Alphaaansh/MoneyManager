@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: demo
+  datasource:
+    url: jdbc:mysql://localhost:3306/money_manager?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: Forstudy@5303
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  mail:
+    host: smtp-relay.brevo.com
+    port: 587
+    username: b78908001@smtp-brevo.com
+    password: xsmtpsib-bdacf962d5cb1ef80e8bfeadff73d9526a80551606dd584ce5c280b28a438d58-UlzA83hta4iSaVT3
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+server:
+  servlet:
+    context-path: /api/v1.0
